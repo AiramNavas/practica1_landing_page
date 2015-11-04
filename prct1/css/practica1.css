@@ -1,0 +1,11 @@
+body {background-image:url("../image/desktop.jpg");background-repeat: no-repeat;}
+label{display:block; padding:5px;}
+h1{color: white; text-align: center; font-size: 400%; font-style: italic;}
+div.formulario{
+	text-align: left;
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #dddddd;
+    width: 300px;
+    border-radius: 25px;
+}

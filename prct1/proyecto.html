@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>CloudPlay</title>
+        <meta charset="utf-8">
+        <link href="css/practica1.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/practica1.js"></script>
+    </head>
+
+    <body>
+        <center>
+            <div id="cabecera">
+                <h1>Bienvenido a CloudPlay</h1>
+                <h2>Reproduce y disfruta de tu propia música de mil maneras diferentes </br> con nuestro reproductor online y aprovecha todas las ventajas que te ofrecemos</h2>
+            </div>
+            <!-- Formulario de contacto -->
+            <div class="formulario">
+                <form action="pagina2.html" method="get" id="formularioContacto" name ="formularioContacto" onsubmit="return validacion()">
+                    <h3>Pruébanos, es totalmente gratuito:</h3>
+
+                    <label for="nombre"><span>Nombre:</span> <input id="nombre" type="text" name="Nombre" /></label>
+                    <label for="apellidos"><span>Apellidos:</span> <input id="apellidos" type="text" name="Apellidos" /></label>
+                    <label for="email"><span>Email:</span> <input id="email" type="text" name="Email" /></label>
+
+                    <label for="ucomun"> <input type="radio" name="tipousuario" value="ucomun" checked>Usuario Común</label>
+                    <label for="uprofesional"> <input type="radio" name="tipousuario" value="uprofesional">Usuario Profesional<br>
+
+                    </br>Comentario: <textarea rows="5" cols="40" type="text" name="comentario" id="comentario" required></textarea>
+
+                    <label><input type="submit" value="Enviar"><input type="reset" value="Cancelar"></label>
+                </form>
+            </div>
+        </center>
+    </body>
+
+</html>
