@@ -2,7 +2,12 @@
 <html>
     <head>
         <title>CloudPlay</title>
+        
         <meta charset="utf-8">
+        <meta name="description" content="Multimedia Online Gratuira">
+	<meta name="keywords" content="HTML,CSS,JavaScript,CloudPlay">
+	<meta name="author" content="Airam Navas">
+	
         <link href="css/practica1.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="js/practica1.js"></script>
     </head>
@@ -15,7 +20,7 @@
             </div>
             <!-- Formulario de contacto -->
             <div class="formulario">
-                <form action="pagina2.html" method="get" id="formularioContacto" name ="formularioContacto" onsubmit="return validacion()">
+                <form action="pagina2.html" method="get" id="formularioContacto" name ="formularioContacto" onsubmit="return validarFormulario()">
                     <h3>Pruébanos, es totalmente gratuito:</h3>
 
                     <label for="nombre"><span>Nombre:</span> <input id="nombre" type="text" name="Nombre" /></label>
@@ -25,7 +30,7 @@
                     <label for="ucomun"> <input type="radio" name="tipousuario" value="ucomun" checked>Usuario Común</label>
                     <label for="uprofesional"> <input type="radio" name="tipousuario" value="uprofesional">Usuario Profesional<br>
 
-                    </br>Comentario: <textarea rows="5" cols="40" type="text" name="comentario" id="comentario" required></textarea>
+                    </br>Comentario: <textarea rows="5" cols="30" type="text" name="comentario" id="comentario" required></textarea>
 
                     <label><input type="submit" value="Enviar"><input type="reset" value="Cancelar"></label>
                 </form>

@@ -1,11 +1,4 @@
-window.onload = function () {
-    document.formularioContacto.nombre.focus();
-    document.formularioContacto.addEventListener('submit', validarFormulario);
-}
-function validarFormulario(evObject) {
-    evObject.preventDefault();
-
-    var todoCorrecto = true;
+function validarFormulario() {
     var formulario = document.formularioContacto;
     var valor = document.getElementById("email").value;
                 
@@ -13,16 +6,15 @@ function validarFormulario(evObject) {
         if(formulario[i].type =='text') {
            if (formulario[i].value == null || formulario[i].value.length == 0 || /^\s*$/.test(formulario[i].value)){
                alert (formulario[i].name+ ' no puede estar vacío o contener sólo espacios en blanco.');
-               todoCorrecto=false;
+	       return false;
             }
         }
     }
-    if (todoCorrecto){
-        if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(valor))) {
-            alert('Formato email incorrecto');
-            todoCorrecto=false;
-        }
+    
+    if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(valor))) {
+        alert('Formato email incorrecto');
+	return false;
     }
     
-    if (todoCorrecto ==true) {formulario.submit();}
+    formulario.submit();
 }

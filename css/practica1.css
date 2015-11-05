@@ -1,8 +1,15 @@
-body {background-image:url("../image/desktop.jpg");background-repeat: no-repeat;}
+body {background-image:url("../image/desktop.jpg");
+  background-position:center center; 
+  background-attachment:fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
 label{display:block; padding:5px;}
 h1{color: white; text-align: center; font-size: 400%; font-style: italic;}
 div.formulario{
-	text-align: left;
+    text-align: left;
     border: 2px solid #a1a1a1;
     padding: 10px 40px; 
     background: #dddddd;
